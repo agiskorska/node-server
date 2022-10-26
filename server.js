@@ -17,7 +17,7 @@ db.connect(err => {
     console.log(err)
     return;
   }
-  console.log("Database connected!"
+  console.log("Database connected!")
 })
 
 app.get('/', (req, res) => {
