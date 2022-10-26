@@ -12,6 +12,14 @@ const db = mysql.createConnection({
   database: "mydb",
 })
 
+db.connect(err => {
+  if(err) {
+    console.log(err)
+    return;
+  }
+  console.log("Database connected!"
+})
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
